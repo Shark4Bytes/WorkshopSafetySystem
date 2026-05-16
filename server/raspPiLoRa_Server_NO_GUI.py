@@ -280,7 +280,7 @@ print("LoRa Initialized")
 # MQTT Setup
 print("Setting up MQTT client...")
 client = mqtt.Client() # Creates client object
-client.username_pw_set(username='vana_', password='Fireonfire1024') # Sets username and password
+client.username_pw_set(username=USERNAME, password=PASSWORD) # Sets username and password
 
 # Enable TLS (REQUIRED)
 client.tls_set(cert_reqs=ssl.CERT_REQUIRED)
